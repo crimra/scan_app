@@ -9,7 +9,8 @@ import {
   ScannerScreen,
   HistoryScreen,
   ProfileScreen,
-  LoginScreen
+  LoginScreen,
+  AdminManagementScreen
 } from '../screens';
 
 const Stack = createStackNavigator<RootStackParamList>();
@@ -53,6 +54,11 @@ const AppNavigator: React.FC = () => {
           name="Profile" 
           component={ProfileScreen}
           options={{ title: 'Profil' }}
+        />
+        <Stack.Screen 
+          name="AdminManagement" 
+          component={AdminManagementScreen}
+          options={{ title: 'Administration' }}
         />
       </Stack.Navigator>
     </NavigationContainer>
